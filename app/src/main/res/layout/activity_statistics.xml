@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:layout_marginEnd="0px" android:layout_marginBottom="0px"
+        app:layout_marginBaseline="0px">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/Theme.MapMyJogOfficial.AppBarOverlay" android:id="@+id/appBarLayout"
+            android:background="#00BCD4">
+
+        <TextView
+                android:text="Statistics"
+                android:layout_width="309dp"
+                android:layout_height="match_parent" android:id="@+id/textView"
+                android:fontFamily="sans-serif-condensed" android:textSize="48sp" android:textColor="#FFFFFF"
+                android:paddingTop="10dp" android:paddingEnd="10dp" android:paddingRight="30dp"
+                android:paddingBottom="0dp" android:paddingLeft="110dp" android:layout_marginStart="0dp"
+                android:layout_marginBottom="0dp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+            android:text="Distance Ran:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:layout_marginStart="100dp" android:layout_marginTop="200dp"
+            android:fontFamily="sans-serif-condensed" android:textSize="20sp" android:textColor="#000000"/>
+    <TextView
+            android:text="Distance Biked:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_marginStart="100dp"
+            android:layout_marginTop="250dp" android:fontFamily="sans-serif-condensed" android:textColor="#000000"
+            android:textSize="20sp"/>
+    <TextView
+            android:text="Average Runtime:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView4" app:layout_anchorGravity="top|center"
+            app:layout_anchor="@+id/appBarLayout" android:layout_marginStart="100dp" android:layout_marginTop="300dp"
+            android:fontFamily="sans-serif-condensed" android:textColor="#000000" android:textSize="20sp"/>
+    <TextView
+            android:text="Average Biketime:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView5" app:layout_anchorGravity="top|center"
+            app:layout_anchor="@+id/appBarLayout" android:layout_marginStart="100dp" android:layout_marginTop="350dp"
+            android:fontFamily="sans-serif-condensed" android:textSize="20sp" android:textColor="#000000"/>
+    <TextView
+            android:text="All time high ran/biked:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView6" app:layout_anchorGravity="top|center"
+            app:layout_anchor="@+id/appBarLayout" android:layout_marginStart="100dp" android:layout_marginTop="400dp"
+            android:fontFamily="sans-serif-condensed" android:textSize="20sp" android:textColor="#000000"/>
+    <Button
+            android:text="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button11" android:layout_marginTop="1760px"
+            android:layout_marginLeft="40px" android:textColor="#FFFFFF" app:backgroundTint="#00BCD4"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView9" android:textSize="20sp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
