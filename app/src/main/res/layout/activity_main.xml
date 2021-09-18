@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:layout_gravity="bottom|center">
 
     <com.google.android.material.appbar.AppBarLayout
             android:layout_height="wrap_content"
@@ -17,14 +17,6 @@
     <include layout="@layout/content_main" android:background="@color/BackgroundColour" android:layout_width="377dp"
              android:layout_height="70dp" android:id="@+id/Background"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email" app:layout_anchorGravity="end|bottom"
-            app:layout_anchor="@+id/fab"/>
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/Settings"
             android:layout_width="match_parent"
@@ -36,10 +28,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:layout_anchorGravity="center" app:layout_anchor="@+id/Settings"
             android:id="@+id/SettingTitle" android:textSize="48sp" android:fontFamily="sans-serif-condensed"
-    />
-    <Button
-            android:text="Button"
+            android:textColor="#FFFFFF"/>
+    <Switch
+            android:text="Dark Mode"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1" android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:lineSpacingExtra="0.01dp" android:fontFamily="sans-serif-condensed"
+            android:textSize="34sp" android:layout_marginTop="-600px" android:layout_gravity="center"
+            android:layout_marginLeft="50px"/>
+    <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button"/>
-
+            android:layout_height="wrap_content" android:layout_gravity="center" android:id="@+id/Units_of_Measurement"
+            android:checkedButton="@id/radioButton2" android:layout_marginTop="-1000px">
+        <RadioButton
+                android:text="Metric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton2"
+                android:fontFamily="sans-serif-condensed" android:textSize="24sp"
+                android:layout_marginTop="80px" android:layout_marginLeft="80px"/>
+        <RadioButton
+                android:text="Imperial "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton3"
+                android:fontFamily="sans-serif-condensed" android:textSize="24sp" android:layout_gravity="right"
+                android:layout_marginTop="-130px" android:layout_marginRight="80px"/>
+        <TextView
+                android:text="Units of Measurment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" android:fontFamily="sans-serif-condensed" android:textSize="34sp"
+                android:textColor="#000000" android:layout_marginTop="-230px"/>
+    </RadioGroup>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
