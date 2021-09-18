@@ -25,4 +25,6 @@
                 android:id="@+id/action_SecondFragment_to_FirstFragment"
                 app:destination="@id/FirstFragment"/>
     </fragment>
+    <activity android:id="@+id/routeplanning" android:name="com.example.mapmyjogofficial.routeplanning"
+              android:label="activity_routeplanning" tools:layout="@layout/activity_routeplanning"/>
 </navigation>
