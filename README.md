@@ -1,9 +1,8 @@
 # MapMyJog
-Just a quick disclaimer, this presentation outlines the ideal form of MapMyJog. 
-Because this would be most of our first Hackathons, we were unable to implement every component as we originally planned. 
-Nonetheless, we’re proud of the application. 
-
-
+MapMyJog is powered through Java and implemented through Android SDK to provide a route 
+generation app for dedicated runners and bikers. It uses the Google Maps API to generate 
+unique routes that loop back to the original starting point, eliminating the need for
+tedious route planning based on a set distance.
 
 The following applies to routeplanning.java:
 
