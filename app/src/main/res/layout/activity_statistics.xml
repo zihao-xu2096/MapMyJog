@@ -8,12 +8,16 @@
         tools:context=".MainActivity" android:layout_marginEnd="0px" android:layout_marginBottom="0px"
         app:layout_marginBaseline="0px">
 
+       <TextView
+            android:text="x1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView11" android:textColor="#000000"
+            android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="200dp"/>
     <com.google.android.material.appbar.AppBarLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:theme="@style/Theme.MapMyJogOfficial.AppBarOverlay" android:id="@+id/appBarLayout"
             android:background="#00BCD4">
-
         <TextView
                 android:text="Statistics"
                 android:layout_width="309dp"
@@ -63,5 +67,30 @@
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView9" android:textSize="20sp"/>
+    <TextView
+            android:text="x1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView10" android:textColor="#000000"
+            android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="200dp"/>
+    <TextView
+            android:text="x2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView12" android:textColor="#000000"
+            android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="250dp"/>
+    <TextView
+            android:text="x3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView13" android:textColor="#000000"
+            android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="300dp"/>
+    <TextView
+            android:text="x4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView14" android:textColor="#000000"
+            android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="350dp"/>
+    <TextView
+            android:text="x5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView15" android:textColor="#000000"
+            android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="400dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
