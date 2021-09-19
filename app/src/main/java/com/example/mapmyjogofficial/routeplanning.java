@@ -13,6 +13,7 @@ package com.example.mapmyjogofficial;
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+// NOTE: This file has been modified to exclude places of interest
 
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -132,62 +133,12 @@ public class routeplanning extends AppCompatActivity
     }
 
     /**
-     * Sets up the options menu.
-     * @param menu The options menu.
-     * @return Boolean.
-     */
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.current_place_menu, menu);
-//        return true;
-//    }
-
-    /**
-     * Handles a click on the menu option to get a place.
-     * @param item The menu item to handle.
-     * @return Boolean.
-     */
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        if (item.getItemId() == R.id.option_get_place) {
-//            showCurrentPlace();
-//        }
-//        return true;
-//    }
-
-    /**
      * Manipulates the map when it's available.
      * This callback is triggered when the map is ready to be used.
      */
     @Override
     public void onMapReady(GoogleMap map) {
         this.map = map;
-
-//        // Use a custom info window adapter to handle multiple lines of text in the
-//        // info window contents.
-//        this.map.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-//
-//            @Override
-//            // Return null here, so that getInfoContents() is called next.
-//            public View getInfoWindow(Marker arg0) {
-//                return null;
-//            }
-//
-//            @Override
-//            public View getInfoContents(Marker marker) {
-//                // Inflate the layouts for the info window, title and snippet.
-//                View infoWindow = getLayoutInflater().inflate(R.layout.custom_info_contents,
-//                        (FrameLayout) findViewById(R.id.map), false);
-//
-//                TextView title = infoWindow.findViewById(R.id.title);
-//                title.setText(marker.getTitle());
-//
-//                TextView snippet = infoWindow.findViewById(R.id.snippet);
-//                snippet.setText(marker.getSnippet());
-//
-//                return infoWindow;
-//            }
-//        });
 
         // Prompt the user for permission.
         getLocationPermission();
@@ -390,12 +341,6 @@ public class routeplanning extends AppCompatActivity
             }
         };
 
-        // Display the dialog.
-//        AlertDialog dialog = new AlertDialog.Builder(this)
-//                .setTitle(R.string.pick_place)
-//                .setItems(likelyPlaceNames, listener)
-//                .show();
-    }
 
     /**
      * Updates the map's UI settings based on whether the user has granted location permission.
@@ -419,56 +364,3 @@ public class routeplanning extends AppCompatActivity
         }
     }
 }
-
-
-
-
-
-//import androidx.fragment.app.FragmentActivity;
-//import android.os.Bundle;
-//
-//import com.google.android.gms.maps.CameraUpdateFactory;
-//import com.google.android.gms.maps.GoogleMap;
-//import com.google.android.gms.maps.OnMapReadyCallback;
-//import com.google.android.gms.maps.SupportMapFragment;
-//import com.google.android.gms.maps.model.LatLng;
-//import com.google.android.gms.maps.model.MarkerOptions;
-//import com.example.mapmyjogofficial.databinding.ActivityRouteplanningBinding;
-//
-//public class routeplanning extends FragmentActivity implements OnMapReadyCallback {
-//
-//    private GoogleMap mMap;
-//    private ActivityRouteplanningBinding binding;
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//
-//        binding = ActivityRouteplanningBinding.inflate(getLayoutInflater());
-//        setContentView(binding.getRoot());
-//
-//        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-//        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-//                .findFragmentById(R.id.map);
-//        mapFragment.getMapAsync(this);
-//    }
-//
-//    /**
-//     * Manipulates the map once available.
-//     * This callback is triggered when the map is ready to be used.
-//     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-//     * we just add a marker near Sydney, Australia.
-//     * If Google Play services is not installed on the device, the user will be prompted to install
-//     * it inside the SupportMapFragment. This method will only be triggered once the user has
-//     * installed Google Play services and returned to the app.
-//     */
-//    @Override
-//    public void onMapReady(GoogleMap googleMap) {
-//        mMap = googleMap;
-//
-//        // Add a marker in Sydney and move the camera
-//        LatLng sydney = new LatLng(-34, 151);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-//    }
-//}
