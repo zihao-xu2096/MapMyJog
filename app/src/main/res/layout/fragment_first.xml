@@ -11,14 +11,14 @@
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_mapmyrun"
+        android:text="@string/text_mapmyjog"
         android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.359"
-        tools:text="@string/text_mapmyrun" />
+        tools:text="@string/text_mapmyrun_old" />
 
     <Button
         android:id="@+id/button_info"

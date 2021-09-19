@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsActivity"
+    android:layout_marginEnd="0px"
+    android:layout_marginBottom="0px"
+    app:layout_marginBaseline="0px">
+
+
+    <TextView
+        android:text="x1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="200dp"/>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.MapMyJogOfficial.AppBarOverlay"
+        android:id="@+id/appBarLayout"
+        android:background="#00BCD4">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="309dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="110dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="0dp"
+            android:text="Statistics"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Distance Ran:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <TextView
+        android:text="Distance Biked:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp" android:fontFamily="sans-serif-condensed" android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Average Runtime:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="top|center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Average Biketime:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="top|center"
+        tools:layout_editor_absoluteX="-20dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="All time high ran/biked:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="top|center"
+        tools:layout_editor_absoluteX="-94dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#00BCD4"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/textView9" android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="541dp" />
+
+    <TextView
+        android:text="x2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/textView12" android:textColor="#000000"
+        android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="250dp"/>
+    <TextView
+        android:text="x3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/textView13" android:textColor="#000000"
+        android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="x4"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="606dp" />
+
+    <TextView
+        android:text="x5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/textView15" android:textColor="#000000"
+        android:textSize="20sp" android:layout_marginStart="310dp" android:layout_marginTop="400dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

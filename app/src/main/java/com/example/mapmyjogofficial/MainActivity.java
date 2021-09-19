@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
     public Button button;
+    public Button buttonroute;
+    public Button buttoninfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,11 +37,27 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
         button = (Button) findViewById(R.id.button_settings);
+        buttonroute = (Button) findViewById(R.id.button_route);
+        buttoninfo = (Button) findViewById(R.id.button_info);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(MainActivity.this,SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonroute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this,routeplanning.class);
+                startActivity(intent);
+            }
+        });
+        buttoninfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this,InfoActivity.class);
                 startActivity(intent);
             }
         });
